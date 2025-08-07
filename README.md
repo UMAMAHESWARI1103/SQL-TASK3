@@ -41,3 +41,15 @@ The screenshot file shows the output of all the queries after being executed in 
 4. Review the output and compare it with the provided screenshot.
 
 ---
+## Display Formatting (Optional for SQL*Plus)
+To fix line wrapping or column alignment issues in terminals:
+
+
+    SET LINESIZE 200
+    SET PAGESIZE 100
+    COLUMN NAME FORMAT A20
+    COLUMN SPECIALITY FORMAT A20
+    COLUMN GENDER FORMAT A10
+    COLUMN DOB FORMAT A12
+    COLUMN DIAGNOSIS FORMAT A25
+    COLUMN APPOINTMENT_DATE FORMAT A12
